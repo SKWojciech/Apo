@@ -1,0 +1,48 @@
+{
+  "version": 10,
+  
+  "$comment": "Presety zdefiniowane tutaj są przeznaczone jako wzorzec - konkretne presety są w CMakeUsersPresets.json",
+  
+  "configurePresets": [
+    {
+      "name": "base-debug",
+      "hidden": true,
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "generator": "Ninja",
+	  "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}"
+      }
+    },
+    {
+      "name": "base-reldbg",
+      "hidden": true,
+	  "binaryDir": "${sourceDir}/build/${presetName}",
+      "generator": "Ninja",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}"
+      }
+    },
+	{
+	  "name": "base-release",
+      "hidden": true,
+	  "binaryDir": "${sourceDir}/build/${presetName}",
+      "generator": "Ninja",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}"
+      }
+	},
+    {
+      "name": "base-minsizerel",
+      "hidden": true,
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "generator": "Ninja",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "MinSizeRel",
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}"
+      }
+    }
+  ]
+}
