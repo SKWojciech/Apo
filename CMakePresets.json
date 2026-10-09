@@ -1,7 +1,7 @@
 {
   "version": 10,
   
-  "$comment": "Presety zdefiniowane tutaj są przeznaczone jako wzorzec - konkretne presety są w CMakeUsersPresets.json",
+  "$comment": "Presety zdefiniowane tutaj są przeznaczone jako wzorzec - konkretne presety są w CMakeUserPresets.json",
   
   "configurePresets": [
     {
